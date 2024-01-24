@@ -1,0 +1,23 @@
+:root{
+    --color-fondo: #F3F5FC;
+    --color-blanco: #FFF;
+    --color-text-area: #0A3871;
+    --color-informacion: #495057;
+
+}
+
+*{
+    background: var(--color-fondo);
+    font-family: 'Inter';
+    overflow-y: hidden;
+}
+
+main {
+    display: flex;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
