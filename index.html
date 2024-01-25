@@ -14,35 +14,27 @@
         <h1>Alura latam + Oracle Next Education</h1>
     </header>
         <main>
-            <section class="izquierda">
-                <div class="">
-                    <div class="campo-de-texto">
-                        <!--<label for="text-area">Ingrese su texto aquí</label>
-                        <input class="text-area" type="text">-->
-                        <textarea class="textarea" cols="50" rows="20" placeholder="Ingrese su texto aqui"></textarea> 
-                    </div>
-                    <div class="informacion">
-                        <img src="imagenes/signo-de-exclamacion.svg" alt="signo de exclamación">
-                        <p class="informacion-p">Solo letras minúsculas y sin acentos</p>
-                    </div>
-                    <div class="botones">
-                        <div class="boton-encriptar">
-                            <button class="" onclick="" type="button">Encriptar</button>
+            <main>
+                <div class="cuerpo">
+                    <section>
+                        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="caja-informacion">
+                            <img src="imagenes/signo-de-exclamacion.svg" alt="Signo de exclamación">
+                            <p class="informacion">Solo letras minúsculas y sin acentos</p>
                         </div>
-
-                        <div class="boton-desencriptar">
-                            <button class="" onclick="" type="button">Desencriptar</button>
+                        <div class="botones">
+                            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                         </div>
-                    </div>
+                    </section>
+                    <section>
+                        <textarea class="mensaje" cols="20" rows="10"></textarea>
+                        <div>
+                            <button class="copiar" onclick="copiar()">Copiar</button>
+                        </div>
+                    </section>
                 </div>
-            </section>
-            <section class="derecha">
-                <textarea class="textarea-derecha" id="" cols="30" rows="10"></textarea>
-                <div>
-                    <button class="" onclick="" type="button">Copiar</button>
-                </div>
-            </section>
-        </main>
+            </main>
     <footer>
         <div class="pie-info">
             <p class="pie-info-texto">Realizado  por Huber Beisel Jeremias</p>

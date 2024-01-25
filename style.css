@@ -1,8 +1,10 @@
 :root{
     --color-fondo: #F3F5FC;
+    --color-boton: #D8DFE8;
     --color-blanco: #FFF;
     --color-text-area: #0A3871;
     --color-informacion: #495057;
+    
 
 }
 html {
@@ -12,10 +14,13 @@ html {
 *, *:before, *:after { /* Paul Irish: aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien */
     box-sizing: inherit;
   }
+
 * {
-    background: var(--color-fondo);
+    background:var(--color-fondo);
     font-family: 'Inter';
-    /*overflow-y: hidden;*/
+    font-weight: 40rem;
+    font-size: 3.2rem;
+    line-height: 150%; 
 }
 header {
     display: flex;
@@ -25,65 +30,102 @@ h1 {
     font-family: 'Inter';
     padding-top: 1rem;
 }
+.logo {
+    margin: 1rem 0 0 1rem;
+}
 body {
     font-size: 16px; /* 1rem = 10px Parte 2 de 2*/
 }
 
-main {
+.cuerpo {
     display: flex;
-    width: 100%;
-    /*height: 90rem;*/
-    /*margin-bottom: 1rem;
-    margin-left: 18rem;*/
+    margin-bottom: 1rem;
+    margin-left: 18rem;
 }
 
-.logo {
-    margin: 1rem 0 0 1rem;
-    width: 10%;
-}
-.derecha {
-    background-color: var(--color-blanco);
-    width: 28%;
-    margin: 0 4rem 0 0;
-   /* height: 94rem;*/
-    border-radius: 3.2rem;
-}
-
-/*Lado Izquierdo*/
-.izquierda {
-    width: 72%;
-}
-.campo-de-texto {
-    /*display: grid;*/
-    text-align: center;
-    
-}
-.textarea {
+.text-area {
+    height: 40rem;
     border: none;
-    outline-color: var(--color-text-area);
-    /*width: 80%;
-    height: 45rem;*/
-}
-.textarea::placeholder {
     color: var(--color-text-area);
-    /*padding-top: 5rem;*/
-    font-family: 'Inter';
-    font-size: 3rem;
-    /*text-align: center;*/
+    margin-top: 3rem;
+    padding: 0.2rem;
+    text-transform: lowercase;
 }
-.informacion {
-    display: flex;
+::placeholder { color: var(--color-text-area); }
+  .text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    height: 63rem;
+    background: var(--color-blanco);
+    background-image: url("/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 2.4rem;
+    color: var(--color-text-area);
+    margin-left: 9.8rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    position: fixed;
 }
-.informacion-p {
-    margin-left: 0.5rem;
-}
-.botones {
-    display: grid;
+.mensaje:focus {
+    outline: none;
 }
 
-/*Lado Derecho*/
-.textarea-derecha {
-    border: none;
-    margin: 2rem;
-    background-color: var(--color-blanco);
+.botones{
+    display: flex;
+    margin-top: 1.8rem;
+}
+
+.btn-desencriptar {
+    background: var(--color-boton);
+    border: 1px solid var(--color-text-area);
+    border-radius: 2.4rem;
+    color: var(--color-text-area);
+    cursor: pointer;
+    height: 6.7rem;
+    margin-left: 3rem;
+    width: 32.8rem;
+}
+
+.btn-encriptar {
+    background-color: var(--color-text-area);
+    border: 1px solid var(--color-text-area);
+    border-radius: 2.4rem;
+    color: var(--color-blanco);
+    cursor: pointer;
+    height: 6.7rem;
+    width: 32.8rem;
+}
+
+.copiar {
+    border: 1px solid var(--color-text-area);
+    border-radius: 2.4rem;
+    color: #0A3871;
+    cursor: pointer;
+    height: 6.7rem;
+    margin-left: 12rem;
+    margin-top: 56.5rem;
+    position: absolute;
+    width: 33.6rem;
+}
+
+.caja-informacion {
+    display: flex;
+}
+
+.informacion {
+    color: var(--color-informacion);
+    font-size:1.8rem;
+    margin-left: 1rem;
+}
+.pie-info {
+    text-align: center;
+}
+.pie-info-texto {
+    font-family: 'Inter';
+    font-size: 2rem;
+    color: var(--color-informacion);
 }
