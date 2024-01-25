@@ -5,19 +5,85 @@
     --color-informacion: #495057;
 
 }
-
-*{
+html {
+    font-size: 62.5%; /* 1rem = 10px Parte 1 de 2*/
+    box-sizing: border-box; /* Paul Irish sobre Box Model: aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien */
+}
+*, *:before, *:after { /* Paul Irish: aplicar un modelo de diseño de caja natural a todos los elementos, pero permitiendo que los componentes cambien */
+    box-sizing: inherit;
+  }
+* {
     background: var(--color-fondo);
     font-family: 'Inter';
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
+}
+header {
+    display: flex;
+}
+h1 {
+    color: var(--color-text-area);
+    font-family: 'Inter';
+    padding-top: 1rem;
+}
+body {
+    font-size: 16px; /* 1rem = 10px Parte 2 de 2*/
 }
 
 main {
     display: flex;
+    width: 100%;
+    /*height: 90rem;*/
+    /*margin-bottom: 1rem;
+    margin-left: 18rem;*/
 }
 
 .logo {
-    padding-top: 10px;
-    margin-left: 10px;
+    margin: 1rem 0 0 1rem;
     width: 10%;
+}
+.derecha {
+    background-color: var(--color-blanco);
+    width: 28%;
+    margin: 0 4rem 0 0;
+   /* height: 94rem;*/
+    border-radius: 3.2rem;
+}
+
+/*Lado Izquierdo*/
+.izquierda {
+    width: 72%;
+}
+.campo-de-texto {
+    /*display: grid;*/
+    text-align: center;
+    
+}
+.textarea {
+    border: none;
+    outline-color: var(--color-text-area);
+    /*width: 80%;
+    height: 45rem;*/
+}
+.textarea::placeholder {
+    color: var(--color-text-area);
+    /*padding-top: 5rem;*/
+    font-family: 'Inter';
+    font-size: 3rem;
+    /*text-align: center;*/
+}
+.informacion {
+    display: flex;
+}
+.informacion-p {
+    margin-left: 0.5rem;
+}
+.botones {
+    display: grid;
+}
+
+/*Lado Derecho*/
+.textarea-derecha {
+    border: none;
+    margin: 2rem;
+    background-color: var(--color-blanco);
 }

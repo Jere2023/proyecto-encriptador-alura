@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="normalizer.css" as="style">
 
     <link rel="stylesheet" href="normalizer.css">
     <link rel="stylesheet" href="style.css">
@@ -10,16 +11,19 @@
 </head>
 <body>
     <header><img class="logo" src="imagenes/Logo.svg" alt="Logo de Alura, una 'a' color azul.">
+        <h1>Alura latam + Oracle Next Education</h1>
     </header>
         <main>
             <section class="izquierda">
                 <div class="">
                     <div class="campo-de-texto">
-                        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                        <!--<label for="text-area">Ingrese su texto aquí</label>
+                        <input class="text-area" type="text">-->
+                        <textarea class="textarea" cols="50" rows="20" placeholder="Ingrese su texto aqui"></textarea> 
                     </div>
-                    <div>
+                    <div class="informacion">
                         <img src="imagenes/signo-de-exclamacion.svg" alt="signo de exclamación">
-                        <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                        <p class="informacion-p">Solo letras minúsculas y sin acentos</p>
                     </div>
                     <div class="botones">
                         <div class="boton-encriptar">
@@ -33,7 +37,7 @@
                 </div>
             </section>
             <section class="derecha">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="textarea-derecha" id="" cols="30" rows="10"></textarea>
                 <div>
                     <button class="" onclick="" type="button">Copiar</button>
                 </div>
