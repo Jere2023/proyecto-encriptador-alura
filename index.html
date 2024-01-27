@@ -10,36 +10,45 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header><img class="logo" src="imagenes/Logo.svg" alt="Logo de Alura, una 'a' color azul.">
-        <h1>Alura latam + Oracle Next Education</h1>
+    <header>
+        <h1>
+            <img class="logo" src="imagenes/Logo.svg" alt="Logo de Alura, una 'a' color azul.">
+            Alura latam + Oracle Next Education
+        </h1>
     </header>
-        <main>
-            <main>
-                <div class="cuerpo">
-                    <section>
-                        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-                        <div class="caja-informacion">
-                            <img src="imagenes/signo-de-exclamacion.svg" alt="Signo de exclamación">
-                            <p class="informacion">Solo letras minúsculas y sin acentos</p>
-                        </div>
-                        <div class="botones">
-                            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-                        </div>
-                    </section>
-                    <section>
-                        <textarea class="mensaje" cols="20" rows="10"></textarea>
-                        <div>
-                            <button class="copiar" onclick="copiar()">Copiar</button>
-                        </div>
-                    </section>
-                </div>
-            </main>
+    <main>
+        <div class="cuerpo">
+            <section class="izquierda">
+                    <textarea class="texto-de-ingreso" placeholder="Ingrese el texto aqui"></textarea>
+                    <div class="caja-informacion">
+                        <img class="imagen-informacion" src="imagenes/signo-de-exclamacion.svg" alt="Signo de exclamación">
+                        <p class="informacion">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+            </section>
+            <section class="derecha">
+                    <textarea class="mensaje"></textarea>
+                    <div class="imagen">
+                        <img src="imagenes/Muñeco.svg" alt="Imagen de una persona mirando con una lupa un diamante">
+                    </div>
+                    <div class="leyenda">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <div>
+                        <button class="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+            </section>
+        </div>
+    </main>
     <footer>
         <div class="pie-info">
             <p class="pie-info-texto">Realizado  por Huber Beisel Jeremias</p>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

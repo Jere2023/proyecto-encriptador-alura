@@ -22,16 +22,13 @@ html {
     font-size: 3.2rem;
     line-height: 150%; 
 }
-header {
-    display: flex;
-}
 h1 {
     color: var(--color-text-area);
     font-family: 'Inter';
     padding-top: 1rem;
 }
 .logo {
-    margin: 1rem 0 0 1rem;
+    margin: 0 0 0 1rem;
 }
 body {
     font-size: 16px; /* 1rem = 10px Parte 2 de 2*/
@@ -39,12 +36,41 @@ body {
 
 .cuerpo {
     display: flex;
-    margin-bottom: 1rem;
-    margin-left: 18rem;
+    justify-content: center;
+    border-style: dashed;
+    border-color: blue;
 }
-
-.text-area {
-    height: 40rem;
+.izquierda{
+    border-style: dashed;
+    border-color: black;
+    width: 72%;
+    text-align: center;
+}
+.texto-de-ingreso{
+    border-style: none;
+}
+.texto-de-ingreso::placeholder{
+    color: var(--color-text-area);
+}
+.caja-informacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen-informacion{
+    padding: 0 1rem;
+}
+.informacion{
+    font-size: 1.5rem;
+}
+.derecha{
+    border-style: dashed;
+    border-color: red;
+    width: 28%;
+    border-radius: 3.2rem;
+    background-color: var(--color-blanco);
+}
+/*.text-area {
     border: none;
     color: var(--color-text-area);
     margin-top: 3rem;
@@ -54,12 +80,12 @@ body {
 ::placeholder { color: var(--color-text-area); }
   .text-area:focus {
       outline: none;
-    }
+    }*/
 
-.mensaje{
+/*.mensaje{
     height: 63rem;
     background: var(--color-blanco);
-    background-image: url("/imagenes/Muñeco.png");
+    /*background-image: url("/imagenes/Muñeco.png");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
@@ -72,8 +98,8 @@ body {
 }
 .mensaje:focus {
     outline: none;
-}
-
+}*/
+/*
 .botones{
     display: flex;
     margin-top: 1.8rem;
@@ -128,4 +154,4 @@ body {
     font-family: 'Inter';
     font-size: 2rem;
     color: var(--color-informacion);
-}
+}*/
