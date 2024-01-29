@@ -2,10 +2,10 @@
     --color-fondo: #F3F5FC;
     --color-boton: #D8DFE8;
     --color-blanco: #FFF;
-    --color-text-area: #0A3871;
+    --color-text-area: #0A3871; /*cambiar a un mejor nombre y las variables*/
     --color-informacion: #495057;
-    
-
+    --color-mensaje: #343A40;
+    --imagen-munieco: url('imagenes/Muñeco.png')
 }
 html {
     font-size: 62.5%; /* 1rem = 10px Parte 1 de 2*/
@@ -37,17 +37,22 @@ body {
 .cuerpo {
     display: flex;
     justify-content: center;
-    border-style: dashed;
-    border-color: blue;
+    /*border-style: dashed;
+    border-color: blue;*/
 }
 .izquierda{
-    border-style: dashed;
-    border-color: black;
+   /* border-style: dashed;
+    border-color: black;*/
     width: 72%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .texto-de-ingreso{
     border-style: none;
+    height: 50rem;
+    cursor: pointer;
 }
 .texto-de-ingreso::placeholder{
     color: var(--color-text-area);
@@ -55,103 +60,114 @@ body {
 .caja-informacion{
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-right: 47rem;
+    opacity: 0.8;
 }
 .imagen-informacion{
     padding: 0 1rem;
 }
 .informacion{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
+.botones{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    
+}
+.btn-encriptar{
+    border-radius: 2.4rem;
+    background: var(--color-text-area);
+    color: var(--color-blanco);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 32.8rem;
+    padding: 2.4rem;
+    align-items: flex-start;
+    cursor: pointer;
+    
+}
+.btn-desencriptar{
+    border-radius: 2.4rem;
+    border: 0.1rem solid var(--color-text-area);
+    background: var(--color-boton);
+    color: var(--color-text-area);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 32.8rem;
+    padding: 2.4rem;
+    align-items: flex-start;
+    cursor: pointer;
+}
+/*Sección Derecha*/
 .derecha{
-    border-style: dashed;
-    border-color: red;
+    /*border-style: dashed;
+    border-color: red;*/
     width: 28%;
     border-radius: 3.2rem;
     background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/*.text-area {
-    border: none;
-    color: var(--color-text-area);
-    margin-top: 3rem;
-    padding: 0.2rem;
-    text-transform: lowercase;
-}
-::placeholder { color: var(--color-text-area); }
-  .text-area:focus {
-      outline: none;
-    }*/
-
-/*.mensaje{
-    height: 63rem;
-    background: var(--color-blanco);
-    /*background-image: url("/imagenes/Muñeco.png");
+.mensaje{
+    margin: 1rem 0 0 1rem;
+    background: var(--imagen-munieco);
     background-repeat: no-repeat;
     background-position: center;
-    border: none;
-    border-radius: 2.4rem;
-    color: var(--color-text-area);
-    margin-left: 9.8rem;
-    margin-top: 2rem;
-    padding-left: 2rem;
-    position: fixed;
-}
-.mensaje:focus {
-    outline: none;
-}*/
-/*
-.botones{
-    display: flex;
-    margin-top: 1.8rem;
-}
-
-.btn-desencriptar {
-    background: var(--color-boton);
-    border: 1px solid var(--color-text-area);
-    border-radius: 2.4rem;
-    color: var(--color-text-area);
+    border-style: none;
     cursor: pointer;
-    height: 6.7rem;
-    margin-left: 3rem;
-    width: 32.8rem;
 }
-
-.btn-encriptar {
-    background-color: var(--color-text-area);
-    border: 1px solid var(--color-text-area);
-    border-radius: 2.4rem;
-    color: var(--color-blanco);
-    cursor: pointer;
-    height: 6.7rem;
-    width: 32.8rem;
+.imagen{
+    background-color: var(--color-blanco);
+    margin-left: 3.5rem;
 }
-
-.copiar {
-    border: 1px solid var(--color-text-area);
-    border-radius: 2.4rem;
-    color: #0A3871;
-    cursor: pointer;
-    height: 6.7rem;
-    margin-left: 12rem;
-    margin-top: 56.5rem;
-    position: absolute;
-    width: 33.6rem;
+.leyenda{
+    background-color: var(--color-blanco);
+    margin-bottom: 18.1rem;
 }
-
-.caja-informacion {
-    display: flex;
-}
-
-.informacion {
-    color: var(--color-informacion);
-    font-size:1.8rem;
-    margin-left: 1rem;
-}
-.pie-info {
+.leyenda h3{
+    /*color: var(--color-);*/
     text-align: center;
-}
-.pie-info-texto {
     font-family: 'Inter';
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%; /* 28.8px */
+    background-color: var(--color-blanco);
+    margin: 0 auto;
+}
+.leyenda p{
     color: var(--color-informacion);
-}*/
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 150%; /* 24px */
+    background-color: var(--color-blanco);
+    margin: 0 auto;
+}
+.copiar{
+    display: flex;
+    gap: 0.8rem;
+    background-color: var(--color-blanco);
+    border-radius: inherit;
+}
+.btn-copiar{
+    border-radius: 2.4rem;
+    border: 0.1rem solid var(--color-text-area);
+    margin: 0 auto;
+    width: 33.6rem;
+    padding: 2.4rem;
+    align-items: flex-start;
+    color: var(--color-text-area);
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
