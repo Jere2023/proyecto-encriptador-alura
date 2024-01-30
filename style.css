@@ -18,7 +18,7 @@ html {
 * {
     background:var(--color-fondo);
     font-family: 'Inter';
-    font-weight: 40rem;
+    font-weight: 400;
     font-size: 3.2rem;
     line-height: 150%; 
 }
@@ -26,6 +26,7 @@ h1 {
     color: var(--color-text-area);
     font-family: 'Inter';
     padding-top: 1rem;
+    text-align: center;
 }
 .logo {
     margin: 0 0 0 1rem;
@@ -86,7 +87,6 @@ body {
     line-height: normal;
     width: 32.8rem;
     padding: 2.4rem;
-    align-items: flex-start;
     cursor: pointer;
     
 }
@@ -102,7 +102,6 @@ body {
     line-height: normal;
     width: 32.8rem;
     padding: 2.4rem;
-    align-items: flex-start;
     cursor: pointer;
 }
 /*Sección Derecha*/
@@ -123,10 +122,6 @@ body {
     background-position: center;
     border-style: none;
     cursor: pointer;
-}
-.imagen{
-    background-color: var(--color-blanco);
-    margin-left: 3.5rem;
 }
 .leyenda{
     background-color: var(--color-blanco);
@@ -165,9 +160,65 @@ body {
     margin: 0 auto;
     width: 33.6rem;
     padding: 2.4rem;
-    align-items: flex-start;
     color: var(--color-text-area);
     text-align: center;
     font-size: 1.6rem;
     cursor: pointer;
+}
+/*Footer*/
+.pie-info{
+    margin: 2rem auto;
+    text-align: center;
+    justify-content: center;
+}
+.pie-info-texto{
+    color: var(--color-informacion);
+    opacity: 0.5;
+    font-size: 2rem;
+}
+@media screen and (max-width: 1172px) {
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 2rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .cuerpo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .botones{
+        display: flex;
+        width: 68.8rem;
+        align-items: flex-start;
+        gap: 2.4rem;
+    }
+    .derecha{
+        display: flex;
+        width: 68.8rem;
+        padding: 3.2rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.2rem;
+        margin-top: 2rem;
+        border-radius: 3.2rem;
+        box-shadow: 0 2.4rem 3.2rem -0.8rem rgba(0, 0, 0, 0.08);
+    }
+    .caja-informacion {
+        margin: auto;
+        width: 68.8rem;
+        gap: 0.8rem;
+    }
+    .leyenda {
+        margin: auto;
+    }
+    .mensaje {
+        background-image: none;
+        width: auto;
+        height: 0;
+    }
 }
