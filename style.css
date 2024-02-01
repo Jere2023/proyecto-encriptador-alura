@@ -222,3 +222,24 @@ body {
         height: 0;
     }
 }
+@media screen and (max-width: 720px){
+    .texto-de-ingreso {
+        height: 20rem;
+    }
+    .izquierda, .derecha{
+        display: inline;
+        width: 100%;
+    }
+    .caja-informacion{
+        width: 100%;
+        margin-left: 3rem;
+    }
+    .botones{
+        display: inline;
+        width: 100%;
+        margin: auto;
+    }
+    .btn-desencriptar {
+        margin-top: 2rem;
+    }
+}
