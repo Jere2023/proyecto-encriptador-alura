@@ -19,7 +19,7 @@
     <main>
         <div class="cuerpo">
             <section class="izquierda">
-                    <textarea class="texto-de-ingreso" placeholder="Ingrese el texto aqui"></textarea>
+                    <textarea id="input-text" class="texto-de-ingreso" placeholder="Ingrese el texto aqui"></textarea>
                     <div class="caja-informacion">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <g clip-path="url(#clip0_10_225)">
@@ -34,18 +34,18 @@
                         <p class="informacion">Solo letras minúsculas y sin acentos</p>
                     </div>
                     <div class="botones">
-                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                        <button id="boton-cripto" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button id="boton-descripto" class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                     </div>
             </section>
             <section class="derecha">
-                    <textarea rows="8" cols="20" class="mensaje"></textarea>
+                    <textarea id="output-text" rows="8" cols="20" class="mensaje"></textarea>
                     <div class="leyenda">
                         <h3>Ningún mensaje fue encontrado</h3>
                         <p>Ingresa el texto que desees encriptar o desencriptar</p>
                     </div>
                     <div class="copiar">
-                        <button class="btn-copiar" id="boton-copiar" onclick="copiar()">Copiar</button>
+                        <button id="boton-copiar" class="btn-copiar" onclick="copiar()">Copiar</button>
                     </div>
             </section>
         </div>
