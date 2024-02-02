@@ -49,11 +49,21 @@ function btnEncriptar() {
         textoDevuelto.value = textoEncriptado;
         textoDevuelto.style.background = 'none';
         document.getElementById('boton-copiar').style.display = 'block';
+        document.getElementById('leyendas').style.display = 'none';
+        textoDevuelto.style.height = '20rem';
     }
 };
 function btnDesencriptar() {
-    //desarrollar
+    if(!validarTexto()){
+        let textoDesencriptado = desencriptar(textoUsuario.value);
+        textoDevuelto.value = textoDesencriptado;
+        textoDevuelto.style.background = 'none';
+        document.getElementById('boton-copiar').style.display = 'block';
+        document.getElementById('leyendas').style.display = 'none';
+    }
 };
 function btnCopiar() {
-    //desarrollar
+    textoDevuelto.select();
+    navigator.clipboard.writeText(textoDevuelto.value);
+    alert('Texto Copiado');
 };
