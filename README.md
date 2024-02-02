@@ -1,11 +1,11 @@
 # Proyecto Encriptador - Alura Latam - ONE
 Sprint 01: Desarrollo de un encriptador usando HTML, CSS y JavaScript
 <p align="center">
-    #challengeonedecodificador6
+    #challengeonedecodificador6 #AluraLatam #ONE
 <p/>
 
 ## Pueba mi versión tu mismo!
-[Visita la gitpage del proyecto][https://jere2023.github.io/proyecto-encriptador-alura/]
+[Visita la gitpage del proyecto](https://jere2023.github.io/proyecto-encriptador-alura/)
 <br>
 ## Descripción del Proyecto
 
@@ -25,14 +25,26 @@ Este diseño es compatible con pantallas de diversos dispositivos, como computad
 Fue recreado desde el figma que nos aportó Aluta Latam, por lo que no es mi diseño, solo lo modifiqué un poco.
 
 ### Computadoras de escritorio
-![Imagen del diseño sin texto para computadora de escritorio](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraUno.jpg)
-![Imagen del diseño con texto para computadora de escritorio](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraDos.jpg)
+<div style="display: flex; justify-content: space-around;">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraUno.jpg" alt="Imagen del diseño sin texto para computadora de escritorio" width="45%" height="300px">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraDos.jpg" alt="Imagen del diseño con texto para computadora de escritorio" width="45%" height="300px">
+    <br>
+</div>
+
 ### Tabletas
-![Imagen del diseño sin texto para Tabletas](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraTres.jpg)
-![Imagen del diseño con texto para Tabletas](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraCuatro.jpg)
+<div style="display: flex; justify-content: space-around;">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraTres.jpg" alt="Imagen del diseño sin texto para Tabletas" width="40%" height="500px">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraCuatro.jpg" alt="Imagen del diseño con texto para Tabletas" width="40%" height="500px">
+    <br>
+</div>
+
 ### Celulares
-![Imagen del diseño sin texto para Celulares](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraCinco.jpg)
-![Imagen del diseño con texto para Celulares](imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraSeis.jpg)
+<div style="display: flex; justify-content: space-around;">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraCinco.jpg" alt="Imagen del diseño sin texto para Celulares" width="35%" height="500px">
+  <img src="imagenes/imagenes-del-proyecto-finalizado/imagenDeMuestraSeis.jpg" alt="Imagen del diseño con texto para Celulares" width="35%" height="500px">
+    <br>
+</div>
+
 ## Conóceme un poco más
 
 Hola, soy Jeremías, puedes conocer más de mi en los siguientes enlaces
